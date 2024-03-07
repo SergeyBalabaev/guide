@@ -6,4 +6,5 @@ mv ubuntu-mainline-kernel.sh /usr/local/bin/
 sed 's/GRUB_DEFAULT=0/GRUB_DEFAULT="1>4"/' /etc/default/grub > file
 cp file /etc/default/grub
 rm file
+rm -r guide
 sudo update-grub
